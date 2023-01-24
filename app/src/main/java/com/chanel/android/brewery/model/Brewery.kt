@@ -1,21 +1,24 @@
 package com.chanel.android.brewery.model
 
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class Brewery(
-    val address_2: Any,
-    val address_3: Any,
-    val brewery_type: String,
-    val city: String,
-    val country: String,
-    val county_province: Any,
-    val created_at: String,
     val id: String,
-    val latitude: String,
-    val longitude: String,
     val name: String,
-    val phone: String,
+    val brewery_type: String,
+    val street: String?,
+    val address_2: String?,
+    val address_3: String?,
+    val city: String,
+    val state: String?,
     val postal_code: String,
-    val state: String,
-    val street: String,
+    val country: String,
+    val county_province: String?,
+    val latitude: String?,
+    val longitude: String?,
+    val phone: String?,
+    val website_url: String?,
+    val created_at: String,
     val updated_at: String,
-    val website_url: String
 )
